@@ -36,6 +36,7 @@ public class PlayerState
         yInput = Input.GetAxisRaw("Vertical");
         player.anim.SetFloat("yVelocity", rb.velocity.y);
         //player.SetVelocity(player.moveSpeed * xInput, rb.velocity.y); // code nayf toi tu them :))
+        // doan nay la comment de commit laij
     }
 
     public virtual void Exit()
