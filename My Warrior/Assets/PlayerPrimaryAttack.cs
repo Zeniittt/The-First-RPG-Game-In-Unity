@@ -20,7 +20,6 @@ public class PlayerPrimaryAttack : PlayerState
             comboCounter = 0;
 
         player.anim.SetInteger("ComboCounter", comboCounter);
-        player.anim.speed = 1.2f;
 
         player.SetVelocity(player.attackMovement[comboCounter].x * player.facingDirection, player.attackMovement[comboCounter].y);
 
@@ -32,7 +31,6 @@ public class PlayerPrimaryAttack : PlayerState
         base.Exit();
 
         player.StartCoroutine("BusyFor", .15f);
-        player.anim.speed = 1;
 
         comboCounter++;
         lastTimeAttacked = Time.time;
