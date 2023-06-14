@@ -9147,6 +9147,7 @@ MonoBehaviour:
     m_Bits: 64
   moveSpeed: 2
   idleTime: 2
+  battleTime: 5
   attackDistance: 1.5
   attackCooldown: 0.5
   lastTimeAttacked: 0
