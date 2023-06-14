@@ -7,9 +7,9 @@ public class Entity : MonoBehaviour
     [Header("Collision Information")]
     [SerializeField] protected Transform groundCheck;
     [SerializeField] protected float groundCheckDistance;
-    [SerializeField] protected LayerMask whatIsGround;
     [SerializeField] protected Transform wallCheck;
     [SerializeField] protected float wallCheckDistance;
+    [SerializeField] protected LayerMask whatIsGround;
 
     public int facingDirection { get; private set; } = 1;
     protected bool facingRight = true;
