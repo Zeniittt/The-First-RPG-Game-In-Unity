@@ -6,6 +6,10 @@ public class Enemy : Entity
 {
     [SerializeField] protected LayerMask whatIsPlayer;
 
+    [Header("Stunned Information")]
+    public float stunDuration;
+    public Vector2 stunDirection;
+
     [Header("Move Information")]
     public float moveSpeed;
     public float idleTime;
