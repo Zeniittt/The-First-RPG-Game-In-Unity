@@ -32,18 +32,56 @@ public class Sword_Skill : Skill
         if (Input.GetKeyUp(KeyCode.Mouse1))
             finalDirection = new Vector2(AimDirection().normalized.x * launchForce.x, AimDirection().normalized.y * launchForce.y);
 
-        if(Input.GetKey(KeyCode.Mouse1))
+        /*if(Input.GetKey(KeyCode.Mouse1))
         {
             for(int i = 0; i < dots.Length; i++)
             {
                 dots[i].transform.position = DotsPosition(i * spaceBetweenDots); 
+            }
+        }*/
+
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+            if (player.facingDirection == 1)
+            {
+                for (int i = 0; i < dots.Length; i++)
+                {
+                    dots[i].transform.position = DotsPosition(i * spaceBetweenDots) + new Vector2(1f, 1f);
+                }
+            }
+            else if (player.facingDirection == -1)
+            {
+                for (int i = 0; i < dots.Length; i++)
+                {
+                    dots[i].transform.position = DotsPosition((dots.Length - 1 - i) * spaceBetweenDots) - new Vector2(1f, 1f);
+                }
             }
         }
     }
 
     public void CreateSword()
     {
-        GameObject newSword = Instantiate(swordPrefab, player.transform.position + new Vector3(1f, 1f, 0), transform.rotation);
+        /*GameObject newSword = Instantiate(swordPrefab, player.transform.position + new Vector3(1f, 1f, 0), transform.rotation);
+        Sword_Skill_Controller newSwordScript = newSword.GetComponent<Sword_Skill_Controller>();
+
+        newSwordScript.SetupSword(finalDirection, swordGravity, player);
+
+        player.AssignNewSword(newSword);
+
+        DotsActive(false);*/
+
+        Vector3 swordPositionOffset = Vector3.zero;
+
+        if (player.facingDirection == 1)
+        {
+            swordPositionOffset = new Vector3(1f, 1f, 0);
+        }
+        else if (player.facingDirection == -1)
+        {
+            swordPositionOffset = new Vector3(-1f, 1f, 0);
+        }
+
+        GameObject newSword = Instantiate(swordPrefab, player.transform.position + swordPositionOffset, transform.rotation);
         Sword_Skill_Controller newSwordScript = newSword.GetComponent<Sword_Skill_Controller>();
 
         newSwordScript.SetupSword(finalDirection, swordGravity, player);
@@ -82,9 +120,20 @@ public class Sword_Skill : Skill
 
     private Vector2 DotsPosition(float t)
     {
-        Vector2 position = (Vector2)player.transform.position + new Vector2(
+        /*Vector2 position = (Vector2)player.transform.position + new Vector2(
             AimDirection().normalized.x * launchForce.x,
             AimDirection().normalized.y * launchForce.y) * t + .5f * (Physics2D.gravity * swordGravity) * (t * t);
+
+        return position;*/
+
+        Vector2 position = (Vector2)player.transform.position + new Vector2(
+                AimDirection().normalized.x * launchForce.x,
+                AimDirection().normalized.y * launchForce.y) * t + .5f * (Physics2D.gravity * swordGravity) * (t * t);
+
+        if (player.facingDirection == -1)
+        {
+            position += new Vector2(0f, 2f); // T?ng v? trí theo chi?u cao
+        }
 
         return position;
     }
