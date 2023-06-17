@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
 
 public class Sword_Skill_Controller : MonoBehaviour
@@ -15,10 +13,11 @@ public class Sword_Skill_Controller : MonoBehaviour
     private bool canRotate = true;
     private bool isReturning;
 
-    public float bounceSpeed;
-    public bool isBouncing = true;
-    public int amountOfBounce = 4;
-    public List<Transform> enemyTarget;
+    [Header("Bounce Information")]
+    [SerializeField] private float bounceSpeed;
+    private bool isBouncing;
+    private int amountOfBounce;
+    private List<Transform> enemyTarget;
     private int targetIndex;
 
     private void Awake()
@@ -30,7 +29,7 @@ public class Sword_Skill_Controller : MonoBehaviour
 
     private void Update()
     {
-        if(canRotate)
+        if (canRotate)
             transform.right = rb.velocity;
 
         if (isReturning)
@@ -39,18 +38,23 @@ public class Sword_Skill_Controller : MonoBehaviour
 
             if (Vector2.Distance(transform.position, player.transform.position) < 1)
                 player.CatchTheSword();
-        }    
+        }
 
-        if(isBouncing && enemyTarget.Count > 0)
+        BounceLogic();
+    }
+
+    private void BounceLogic()
+    {
+        if (isBouncing && enemyTarget.Count > 0)
         {
             transform.position = Vector2.MoveTowards(transform.position, enemyTarget[targetIndex].position, bounceSpeed * Time.deltaTime);
 
-            if(Vector2.Distance(transform.position, enemyTarget[targetIndex].position) < .1f)
+            if (Vector2.Distance(transform.position, enemyTarget[targetIndex].position) < .1f)
             {
                 targetIndex++;
                 amountOfBounce--;
 
-                if(amountOfBounce <= 0)
+                if (amountOfBounce <= 0)
                 {
                     isBouncing = false;
                     isReturning = true;
@@ -70,6 +74,15 @@ public class Sword_Skill_Controller : MonoBehaviour
 
         anim.SetBool("Rotation", true);
     }
+
+    public void SetupBounce(bool _isBouncing, int _amountOfBounces)
+    {
+        isBouncing = _isBouncing;
+        amountOfBounce = _amountOfBounces;
+        enemyTarget = new List<Transform>();
+    }
+
+    #region Aim
 
     public void ReturnSword()
     {
@@ -116,4 +129,6 @@ public class Sword_Skill_Controller : MonoBehaviour
         anim.SetBool("Rotation", false);
         transform.parent = collision.transform;
     }
+
+    #endregion
 }
