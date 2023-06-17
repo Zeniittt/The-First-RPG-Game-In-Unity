@@ -8100,7 +8100,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.870316, y: 3.295695, z: -10}
+  m_LocalPosition: {x: -13.960464, y: 3.295695, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9238,7 +9238,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823293581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.08, y: -1.66, z: 0}
+  m_LocalPosition: {x: -0.95, y: -1.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9734,7 +9734,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183942973}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.870316, y: 3.295695, z: -10}
+  m_LocalPosition: {x: -13.960464, y: 3.295695, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10485,8 +10485,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown: 0
   swordType: 0
-  amountOfBounce: 5
-  bounceGravity: 5
+  bounceAmount: 4
+  bounceGravity: 1
+  peirceAmount: 1
+  peirceGravity: 1
   swordPrefab: {fileID: 3784746720590105516, guid: 94ed4bcaac385da4fb4a1b0d04442f0f, type: 3}
   launchForce: {x: 35, y: 25}
   swordGravity: 4
