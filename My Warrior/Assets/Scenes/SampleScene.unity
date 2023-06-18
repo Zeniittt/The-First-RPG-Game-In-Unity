@@ -9370,7 +9370,7 @@ MonoBehaviour:
   attackCheck: {fileID: 272176239}
   attackCheckRadius: 0.8
   groundCheck: {fileID: 1667335994}
-  groundCheckDistance: 0.4
+  groundCheckDistance: 1
   wallCheck: {fileID: 2129912296}
   wallCheckDistance: 0.8
   whatIsGround:
@@ -9892,7 +9892,7 @@ MonoBehaviour:
   attackCheck: {fileID: 1719073125}
   attackCheckRadius: 0.8
   groundCheck: {fileID: 791086343}
-  groundCheckDistance: 0.4
+  groundCheckDistance: 1
   wallCheck: {fileID: 1688804398}
   wallCheckDistance: 0.8
   whatIsGround:
@@ -10488,9 +10488,12 @@ MonoBehaviour:
   swordPrefab: {fileID: 3784746720590105516, guid: 94ed4bcaac385da4fb4a1b0d04442f0f, type: 3}
   launchForce: {x: 35, y: 25}
   swordGravity: 4
+  freezeTimeDuration: 0.3
+  returnSpeed: 20
   bounceAmount: 4
   bounceGravity: 1
-  peirceAmount: 1
+  bounceSpeed: 20
+  peirceAmount: 2
   peirceGravity: 1
   hitCooldown: 5
   maxTravelDistance: 7
