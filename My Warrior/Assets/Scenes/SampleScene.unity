@@ -9223,6 +9223,7 @@ GameObject:
   - component: {fileID: 823293585}
   - component: {fileID: 823293584}
   - component: {fileID: 823293586}
+  - component: {fileID: 823293587}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -9333,6 +9334,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitMat: {fileID: 2100000, guid: ccba11078a492324aa12d643fc48a623, type: 2}
+--- !u!114 &823293587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823293581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc4a5a58e7ab5b41ad46b49498c7ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1 &943463630
 GameObject:
   m_ObjectHideFlags: 0
@@ -9346,6 +9362,7 @@ GameObject:
   - component: {fileID: 943463632}
   - component: {fileID: 943463631}
   - component: {fileID: 943463635}
+  - component: {fileID: 943463636}
   m_Layer: 7
   m_Name: Enemy_Skeleton
   m_TagString: Untagged
@@ -9468,6 +9485,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitMat: {fileID: 2100000, guid: ccba11078a492324aa12d643fc48a623, type: 2}
+--- !u!114 &943463636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943463630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc4a5a58e7ab5b41ad46b49498c7ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  maxHealth: 50
+  currentHealth: 0
 --- !u!1 &1079810307
 GameObject:
   m_ObjectHideFlags: 0
@@ -9855,6 +9887,7 @@ GameObject:
   - component: {fileID: 1397967226}
   - component: {fileID: 1397967225}
   - component: {fileID: 1397967224}
+  - component: {fileID: 1397967229}
   m_Layer: 7
   m_Name: Enemy_Skeleton (1)
   m_TagString: Untagged
@@ -9977,6 +10010,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1397967229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397967223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc4a5a58e7ab5b41ad46b49498c7ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  maxHealth: 50
+  currentHealth: 0
 --- !u!1 &1445313788
 GameObject:
   m_ObjectHideFlags: 0
