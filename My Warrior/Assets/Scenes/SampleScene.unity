@@ -9352,7 +9352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &943463631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10550,7 +10550,8 @@ MonoBehaviour:
   createCloneOnDashOver: 0
   createCloneOnCounterAttack: 0
   canDuplicateClone: 0
-  chanceToDuplicate: 75
+  chanceToDuplicate: 0
+  crystalInsteadOfClone: 0
 --- !u!114 &1964268901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10619,8 +10620,8 @@ MonoBehaviour:
   crystalDuration: 1.5
   crystalPrefab: {fileID: 3169231342506141261, guid: aa663b825ad35754188336318b5ba26e, type: 3}
   cloneInsteadOfCrystal: 1
-  canExplode: 0
-  canMoveToEnemy: 0
+  canExplode: 1
+  canMoveToEnemy: 1
   moveSpeed: 5
   canUseMultiStacks: 0
   amountOfStacks: 3
