@@ -10611,11 +10611,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 0
-  crystalDuration: 3
+  crystalDuration: 1.5
   crystalPrefab: {fileID: 3169231342506141261, guid: aa663b825ad35754188336318b5ba26e, type: 3}
   canExplode: 1
   canMoveToEnemy: 1
   moveSpeed: 5
+  canUseMultiStacks: 1
+  amountOfStacks: 3
+  multiStackCooldown: 4
+  useTimeWindow: 2.5
+  crystalList:
+  - {fileID: 3169231342506141261, guid: aa663b825ad35754188336318b5ba26e, type: 3}
+  - {fileID: 3169231342506141261, guid: aa663b825ad35754188336318b5ba26e, type: 3}
+  - {fileID: 3169231342506141261, guid: aa663b825ad35754188336318b5ba26e, type: 3}
 --- !u!1 &2129912295
 GameObject:
   m_ObjectHideFlags: 0

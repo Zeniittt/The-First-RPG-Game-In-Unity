@@ -40,6 +40,7 @@ public class Crystal_Skill_Controller : MonoBehaviour
         if (canMove)
         {
             transform.position = Vector2.MoveTowards(transform.position, closestTarget.position, moveSpeed * Time.deltaTime);
+
             if (Vector2.Distance(transform.position, closestTarget.position) < 1)
             {
                 FinishCrystal();
@@ -48,8 +49,7 @@ public class Crystal_Skill_Controller : MonoBehaviour
         }
 
         if (canGrow)
-            transform.localScale = Vector2.Lerp(transform.localScale, new Vector2(3, 3), growSpeed * Time.deltaTime);
-
+            transform.localScale = Vector2.Lerp(transform.localScale, new Vector2(2, 2), growSpeed * Time.deltaTime);
     }
 
     private void AnimationExplodeEvent()
