@@ -12,6 +12,11 @@ public class CharacterStats : MonoBehaviour
     public Stat intelligence;   // 1 point increase magic damage by 1 and magic resistance by 3
     public Stat vitality;       // 1 point increase health by 3 or 5
 
+    [Header("Offensive Stats")]
+    public Stat damage;
+    public Stat critChance;
+    public Stat critPower;
+
     [Header("Defensive Stats")]
     public Stat maxHealth;
     public Stat armor;
@@ -20,13 +25,13 @@ public class CharacterStats : MonoBehaviour
 
 
 
-    public Stat damage;
 
     [SerializeField] private int currentHealth;
 
     // Start is called before the first frame update
     protected virtual void Start()
     {
+        critPower.SetDefaultValue(150);
         currentHealth = maxHealth.GetValue();
     }
 
@@ -36,6 +41,11 @@ public class CharacterStats : MonoBehaviour
             return;
 
         int totalDamage = damage.GetValue() + strength.GetValue();
+
+        if (CanCrit())
+        {
+            totalDamage = CalculateCriticalDamage(totalDamage);
+        }
 
         totalDamage = CheckTargetArmor(_targetStats, totalDamage);
 
@@ -73,5 +83,25 @@ public class CharacterStats : MonoBehaviour
         totalDamage -= _targetStats.armor.GetValue();
         totalDamage = Mathf.Clamp(totalDamage, 0, int.MaxValue);
         return totalDamage;
+    }
+
+    private bool CanCrit()
+    {
+        int totalCriticalChance = critChance.GetValue() + agility.GetValue();
+
+        if(Random.Range(0, 100) <= totalCriticalChance)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    private int CalculateCriticalDamage(int _damage)
+    {
+        float totalCritPower = (critPower.GetValue() + strength.GetValue()) * .01f;       
+        float critDamage = _damage * totalCritPower;  
+
+        return Mathf.RoundToInt(critDamage);
     }
 }
