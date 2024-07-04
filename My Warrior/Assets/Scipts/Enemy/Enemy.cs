@@ -13,10 +13,10 @@ public class Enemy : Entity
     [SerializeField] protected GameObject counterImage;
 
     [Header("Move Information")]
-    private float defaultMoveSpeed;
     public float moveSpeed;
     public float idleTime;
     public float battleTime;
+    private float defaultMoveSpeed;
 
     [Header("Attack Information")]
     public float attackDistance;
@@ -42,9 +42,21 @@ public class Enemy : Entity
         stateMachine.currentState.Update();
     }
 
-    public virtual void AssignLastAnimName(string _animBoolName)
+    public virtual void AssignLastAnimName(string _animBoolName) => lastAnimBoolName = _animBoolName;
+
+    public override void SlowEntityBy(float _slowPercentage, float _slowDuration)
     {
-        lastAnimBoolName = _animBoolName;
+        moveSpeed = moveSpeed * (1 - _slowPercentage);
+        anim.speed = anim.speed * (1 - _slowPercentage);
+
+        Invoke("ReturnDefaultSpeed", _slowDuration);
+    }
+
+    public override void ReturnDefaultSpeed()
+    {
+        base.ReturnDefaultSpeed();
+
+        moveSpeed = defaultMoveSpeed;
     }
 
     public virtual void FreezeTime(bool _timeFrozen)
