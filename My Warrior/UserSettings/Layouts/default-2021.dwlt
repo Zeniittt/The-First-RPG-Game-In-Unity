@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 3574
+  controlID: 1668
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 3569
+  controlID: 1669
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 3575
+  controlID: 1639
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,8 +244,8 @@ MonoBehaviour:
     y: 0
     width: 487.2
     height: 336
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -679,9 +679,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 47.61493, y: 0.55622745, z: 0.35479173}
+    m_Target: {x: 3.4647455, y: -0.41032124, z: -0.0020468757}
     speed: 2
-    m_Value: {x: 47.61493, y: 0.55622745, z: 0.35479173}
+    m_Value: {x: 3.4647455, y: -0.41032124, z: -0.0020468757}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -732,9 +732,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.782954
+    m_Target: 5.6526327
     speed: 2
-    m_Value: 3.782954
+    m_Value: 5.6526327
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -957,7 +957,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 25618
+  m_LastSelectedObjectID: -41748
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -989,10 +989,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 122}
-      m_SelectedIDs: d8a10000
-      m_LastClickedID: 0
-      m_ExpandedIDs: fafaffff0efbfffff263000012640000346400005c640000
+      scrollPos: {x: 0, y: 26}
+      m_SelectedIDs: 40e7ffff
+      m_LastClickedID: -6336
+      m_ExpandedIDs: 0efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1094,13 +1094,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scipts/Controllers/Skill_Controllers
+    - Assets/Scipts/Data
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 53
   m_LastFolders:
-  - Assets/Scipts/Controllers/Skill_Controllers
+  - Assets/Scipts/Data
   m_LastFoldersGridSize: 53
   m_LastProjectPath: D:\hoc\TinIT\TinUnity\MyProject\The First RPG Game In Unity\My
     Warrior
@@ -1108,9 +1108,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 246.20001}
-    m_SelectedIDs: d8a10000
-    m_LastClickedID: 41432
-    m_ExpandedIDs: 00000000b2690000b4690000b6690000b8690000ba690000bc690000c0690000c2690000c4690000d2a10000
+    m_SelectedIDs: 946a0000
+    m_LastClickedID: 27284
+    m_ExpandedIDs: 00000000466a0000486a00004a6a00004c6a00004e6a0000506a0000526a0000546a0000566a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1138,7 +1138,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b2690000b4690000b6690000b8690000ba690000bc690000c0690000c2690000c4690000
+    m_ExpandedIDs: 00000000466a0000486a00004a6a00004c6a00004e6a0000506a0000526a0000546a0000566a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
