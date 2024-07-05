@@ -10432,6 +10432,7 @@ GameObject:
   - component: {fileID: 823293584}
   - component: {fileID: 823293586}
   - component: {fileID: 823293587}
+  - component: {fileID: 823293588}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -10612,6 +10613,23 @@ MonoBehaviour:
   ailmentsDuration: 4
   shockStrikePrefab: {fileID: 3311838321584216320, guid: 9fd577005e337ed458f54eab76359496, type: 3}
   currentHealth: 0
+--- !u!114 &823293588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823293581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b7e27e0a18eba944af76a212b638886, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  possibleItemDrop: 0
+  possibleDrop: []
+  dropPrefab: {fileID: 7906463770287357712, guid: ef9926c514a845542973107ce29e500c, type: 3}
+  chanceToLooseItems: 30
+  chanceToLooseMaterials: 75
 --- !u!1001 &838399189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11037,7 +11055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength:
-    baseValue: 5
+    baseValue: 60
     modifiers: 
   agility:
     baseValue: 0
@@ -11122,7 +11140,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8e6777a5dfc903149b6d8921eaefb18f, type: 2}
   - {fileID: 11400000, guid: 39c47b225aabf2c45b917148e9d8b54d, type: 2}
   dropPrefab: {fileID: 7906463770287357712, guid: ef9926c514a845542973107ce29e500c, type: 3}
-  item: {fileID: 11400000, guid: 8e6777a5dfc903149b6d8921eaefb18f, type: 2}
 --- !u!224 &946217216 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1911502857842437353, guid: 95ea8a0ecc7ce4f418bca71ff4545605, type: 3}
@@ -13680,6 +13697,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd03567c88b8db4daba6e0c367bc485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingItems:
+  - {fileID: 11400000, guid: 1f02394d5ecb774439139fefd329a6d7, type: 2}
+  - {fileID: 11400000, guid: b96a8ca4c9779cd4eaa8663603812e44, type: 2}
+  - {fileID: 11400000, guid: 39c47b225aabf2c45b917148e9d8b54d, type: 2}
+  - {fileID: 11400000, guid: 30cef8a6f83a0cc4d87825c09c3aaa09, type: 2}
   equipment: []
   inventory: []
   stash: []
