@@ -10605,7 +10605,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   lightingDamage:
-    baseValue: 15
+    baseValue: 0
     modifiers: 
   isIgnited: 0
   isChilled: 0
@@ -11055,7 +11055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength:
-    baseValue: 60
+    baseValue: 5
     modifiers: 
   agility:
     baseValue: 0
@@ -13703,6 +13703,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 39c47b225aabf2c45b917148e9d8b54d, type: 2}
   - {fileID: 11400000, guid: 30cef8a6f83a0cc4d87825c09c3aaa09, type: 2}
   - {fileID: 11400000, guid: d5e0f56e4fc25c14b9dbf20b2a6e93ba, type: 2}
+  - {fileID: 11400000, guid: 0ab27d43261dc9043b70454d02b7dc86, type: 2}
   equipment: []
   inventory: []
   stash: []
