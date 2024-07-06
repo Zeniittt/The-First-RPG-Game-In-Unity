@@ -80,6 +80,19 @@ public class CharacterStats : MonoBehaviour
             ApplyIngiteDamage();
     }
 
+    public virtual void IncreaseStatBy(int _modifier, float _duration, Stat _statModify)
+    {
+        StartCoroutine(StatModifierCoroutine(_modifier, _duration, _statModify));
+    }
+
+    private IEnumerator StatModifierCoroutine(int _modifier, float _duration, Stat _statModify)
+    {
+        _statModify.AddModifier(_modifier);
+
+        yield return new WaitForSeconds(_duration);
+
+        _statModify.RemoveModifier(_modifier);
+    }
 
     public virtual void DoDamage(CharacterStats _targetStats)
     {
@@ -96,7 +109,8 @@ public class CharacterStats : MonoBehaviour
         totalDamage = CheckTargetArmor(_targetStats, totalDamage);
 
         _targetStats.TakeDamage(totalDamage);
-        //DoMagicalDamage(_targetStats);
+
+        DoMagicalDamage(_targetStats);  //remove if you don't want to apply magic hit on primary attack
     }
 
     #region Magical Damage and Ailments
