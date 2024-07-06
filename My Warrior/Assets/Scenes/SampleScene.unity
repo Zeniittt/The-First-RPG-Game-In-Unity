@@ -11055,7 +11055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength:
-    baseValue: 5
+    baseValue: 10
     modifiers: 
   agility:
     baseValue: 0
@@ -13705,6 +13705,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d5e0f56e4fc25c14b9dbf20b2a6e93ba, type: 2}
   - {fileID: 11400000, guid: 0ab27d43261dc9043b70454d02b7dc86, type: 2}
   - {fileID: 11400000, guid: 559a0bd57d088334481bc17e176cfb9f, type: 2}
+  - {fileID: 11400000, guid: ed47570fe7febd446b4e1ee11f680bcc, type: 2}
+  - {fileID: 11400000, guid: 3f7908015ac22c449ac553c3c9775349, type: 2}
   equipment: []
   inventory: []
   stash: []
