@@ -13,6 +13,8 @@ public class ItemData_Equipment : ItemData
 {
     public EquipmentType equipmentType;
 
+    public ItemEffect[] itemEffects;
+
     [Header("Major Stats")]
     public int strength;       // 1 point increase damage by 1 and crit power 1%
     public int agility;        // 1 point increase evasion by 1% and crit chance by 1%
@@ -34,6 +36,14 @@ public class ItemData_Equipment : ItemData
     public int fireDamage;
     public int iceDamage;
     public int lightingDamage;
+
+    public void ExecuteItemEffect()
+    {
+        foreach (var item in itemEffects)
+        {
+            item.ExecuteEffect();
+        }
+    }
 
     public void AddModifiers()
     {
