@@ -20,7 +20,7 @@ public class Tornado_Effect : ItemEffect
             GameObject newTornado = Instantiate(tornadoPrefab, _respawnPosition.position, player.transform.rotation);
             newTornado.GetComponent<Rigidbody2D>().velocity = new Vector2(xVelocity * player.facingDirection, 0);
 
-            Destroy(newTornado, 10);
+            Destroy(newTornado, 2);
 
         }
     }
