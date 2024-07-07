@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec38daf3378ee77459e3b20ac7c0ab69, type: 3}
+  m_Name: Tornado
+  m_EditorClassIdentifier: 
+  tornadoPrefab: {fileID: 4659527309636343510, guid: b4fc21091e5cd1f4195fa91bbee1e31e, type: 3}
+  xVelocity: 10
