@@ -251,8 +251,9 @@ public class Inventory : MonoBehaviour
     {
         ItemData_Equipment currentArmor = GetEquipment(EquipmentType.Armor);
 
-        if(Time.time > lastTimeUsedArmor + currentArmor.itemCooldown)
+        if(Time.time > lastTimeUsedArmor + armorCooldown)
         {
+            armorCooldown = currentArmor.itemCooldown;
             lastTimeUsedArmor = Time.time;
 
             return true;
