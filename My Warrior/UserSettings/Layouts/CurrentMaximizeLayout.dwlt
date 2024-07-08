@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 21771
+  controlID: 29855
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 21724
+  controlID: 29856
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -452,9 +452,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 355.68015, y: 196.01962, z: -0.68212986}
+    m_Target: {x: 242.37714, y: 221.86394, z: -2.765528}
     speed: 2
-    m_Value: {x: 355.68015, y: 196.01962, z: -0.68212986}
+    m_Value: {x: 242.37714, y: 221.86394, z: -2.765528}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -505,9 +505,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 82.50614
+    m_Target: 267.53818
     speed: 2
-    m_Value: 82.50614
+    m_Value: 267.53818
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -757,7 +757,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -19362
+  m_LastSelectedObjectID: 25606
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -782,7 +782,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 21772
+  controlID: 29811
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -841,10 +841,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 130}
+      scrollPos: {x: 0, y: 98}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1c1cffffa06cffff3ac8ffffe2d3ffff86d4ffff0ed5ffffb2dbffff82e3ffff0efbffff386400006a640000fe6400007e650000a2670000
+      m_ExpandedIDs: 1c1cffffa06cffffe2d3ffff86d4ffff0ed5ffffb2dbffff82e3ffff0efbffff386400006a640000fe6400007e650000a2670000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -977,10 +977,10 @@ MonoBehaviour:
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 46
+  m_StartGridSize: 16
   m_LastFolders:
   - Assets/Scipts/UI
-  m_LastFoldersGridSize: 46
+  m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\hoc\TinIT\TinUnity\MyProject\The First RPG Game In Unity\My
     Warrior
   m_LockTracker:
@@ -1042,10 +1042,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 3ac8ffff
-    m_LastClickedInstanceID: -14278
+    m_SelectedInstanceIDs: 38670000
+    m_LastClickedInstanceID: 26424
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c8770000285d0000385d0000ac7c00005c6500005e6500009e90000018660000766c000022770000f0660000d67b0000689300007a67000058670000267d0000f67b0000fe820000206800000000000074770000
+    m_ExpandedInstanceIDs: c8770000285d0000385d0000ac7c00005c6500005e6500009e90000018660000766c000022770000f0660000d67b0000689300007a67000058670000267d0000f67b0000fe8200002068000000000000747700003a6a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1070,7 +1070,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 46
+    m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 168.80005
 --- !u!114 &15
@@ -1163,8 +1163,8 @@ MonoBehaviour:
     m_CachedPref: -160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -14278
-  m_LastVerticalScrollValue: 324
+  m_LastInspectedObjectInstanceID: 26424
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
