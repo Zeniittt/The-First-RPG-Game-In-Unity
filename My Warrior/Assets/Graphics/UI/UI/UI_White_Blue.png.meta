@@ -141,13 +141,13 @@ TextureImporter:
       name: artdecoUI_PIPO_wb_1
       rect:
         serializedVersion: 2
-        x: 311
-        y: 673
-        width: 312
-        height: 195
+        x: 310
+        y: 671
+        width: 314
+        height: 197
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 40, y: 40, z: 39, w: 40}
+      border: {x: 41, y: 42, z: 40, w: 40}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -167,7 +167,7 @@ TextureImporter:
         width: 91
         height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 7, y: 7, z: 7, w: 7}
       outline: []
       physicsShape: []
