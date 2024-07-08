@@ -23993,7 +23993,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1964268899
 MonoBehaviour:
@@ -24150,6 +24150,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f7908015ac22c449ac553c3c9775349, type: 2}
   - {fileID: 11400000, guid: 2326ab12864581f4f9f2dd77c1c0990f, type: 2}
   - {fileID: 11400000, guid: 79a438342a5306a4baa27fa1525efb4a, type: 2}
+  - {fileID: 11400000, guid: 94062c22a75b5b046be30da5cc843df4, type: 2}
   equipment: []
   inventory: []
   stash: []
@@ -24343,7 +24344,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.0000305, y: -208}
+  m_AnchoredPosition: {x: -9.0000305, y: -201}
   m_SizeDelta: {x: 380, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2017482971
@@ -25550,7 +25551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4739590708500615760, guid: 94ed4bcaac385da4fb4a1b0d04442f0f, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4739590708500615760, guid: 94ed4bcaac385da4fb4a1b0d04442f0f, type: 3}
       propertyPath: m_LocalPosition.x
