@@ -41,7 +41,6 @@ public class UI_CraftList : MonoBehaviour, IPointerDownHandler
 
     public void SetupDefaultCraftWindow()
     {
-        if (craftEquipment[0] != null)
-            GetComponentInParent<UI>().craftWindow.SetupCraftWindow(craftEquipment[0]);
+        GetComponentInParent<UI>().craftWindow.SetupCraftWindow(null);
     }
 }

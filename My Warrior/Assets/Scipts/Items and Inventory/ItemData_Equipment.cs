@@ -133,7 +133,7 @@ public class ItemData_Equipment : ItemData
 
             if(_value > 0)
             {
-                sb.Append("+ " + _name + " " + _value);
+                sb.Append("+ " + _value + " " + _name);
             }
         }
     }
