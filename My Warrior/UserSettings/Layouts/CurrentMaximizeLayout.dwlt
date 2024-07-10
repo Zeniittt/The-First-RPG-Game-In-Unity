@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 76253
+  controlID: 81375
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 76254
+  controlID: 81314
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -452,9 +452,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 285.5629, y: 69.845924, z: 0.53521544}
+    m_Target: {x: 293.2561, y: 244.68518, z: 0.46692786}
     speed: 2
-    m_Value: {x: 285.5629, y: 69.845924, z: 0.53521544}
+    m_Value: {x: 293.2561, y: 244.68518, z: 0.46692786}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -505,9 +505,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 107.15389
+    m_Target: 172.14146
     speed: 2
-    m_Value: 107.15389
+    m_Value: 172.14146
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -782,7 +782,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 76203
+  controlID: 81376
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -973,22 +973,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scipts/Skills
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scipts/Skills
+  - Assets/Prefabs
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\hoc\TinIT\TinUnity\MyProject\The First RPG Game In Unity\My
     Warrior
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 127}
-    m_SelectedIDs: 86700000
-    m_LastClickedID: 28806
+    scrollPos: {x: 0, y: 95}
+    m_SelectedIDs: 6e700000
+    m_LastClickedID: 28782
     m_ExpandedIDs: 000000003e70000040700000427000004470000046700000487000004a7000004c7000004e7000005070000052700000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
