@@ -31275,6 +31275,7 @@ GameObject:
   - component: {fileID: 1964268902}
   - component: {fileID: 1964268903}
   - component: {fileID: 1964268904}
+  - component: {fileID: 1964268905}
   m_Layer: 0
   m_Name: SkillManager
   m_TagString: Untagged
@@ -31446,6 +31447,24 @@ MonoBehaviour:
   restoreHealthUnlockButton: {fileID: 407579308}
   restoreHealthPercentage: 0.05
   parryWithMirageUnlockButton: {fileID: 786540844}
+--- !u!114 &1964268905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964268896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4522d4a06d48634280c85cfff3fd0bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 0
+  unlockDodgeButton: {fileID: 1736178194}
+  evasionAmount: 10
+  dodgeUnlocked: 0
+  unlockMirageDodgeButton: {fileID: 648317462}
+  mirageDodgeUnlocked: 0
 --- !u!1 &1965625898
 GameObject:
   m_ObjectHideFlags: 0
