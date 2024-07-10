@@ -20,6 +20,8 @@ MonoBehaviour:
   itemCooldown: 30
   itemEffects:
   - {fileID: 11400000, guid: c7cf9bcd0c1032146bae12ce65859804, type: 2}
+  itemEffectDescription: Each 3rd attack you create a tornado that knocks up all
+    enemies it hits
   strength: 0
   agility: 0
   intelligence: 0

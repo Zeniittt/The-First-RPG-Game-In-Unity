@@ -20,6 +20,7 @@ MonoBehaviour:
   itemCooldown: 0
   itemEffects:
   - {fileID: 11400000, guid: 5a12b7c2dd7af1c49b19ae4aac7f65d1, type: 2}
+  itemEffectDescription: When attacking you can restore 10% of your maximum health
   strength: 0
   agility: 0
   intelligence: 0

@@ -20,6 +20,8 @@ MonoBehaviour:
   itemCooldown: 0
   itemEffects:
   - {fileID: 11400000, guid: 0c8c94ec4edd39f42849f8f156e10f51, type: 2}
+  itemEffectDescription: When you attack, you will create a wave of lightning from
+    above that will strike down on the enemy
   strength: 0
   agility: 0
   intelligence: 0

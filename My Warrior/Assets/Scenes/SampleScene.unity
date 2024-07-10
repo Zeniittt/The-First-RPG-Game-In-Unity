@@ -420,6 +420,7 @@ MonoBehaviour:
 
 '
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 1282740139}
@@ -2660,6 +2661,7 @@ MonoBehaviour:
   skillName: Time Stop
   skillDescription: When enemy hit by sword, his time stops
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 850230330}
@@ -3266,6 +3268,7 @@ MonoBehaviour:
   skillName: Bullet Sword
   skillDescription: "Sword can pierce targets \n[Only one sword upgrade can be choose]"
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 850230330}
@@ -3529,6 +3532,7 @@ MonoBehaviour:
   skillName: Vulnerability
   skillDescription: When enemy hit by sword, take 10% more damage
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 850230330}
@@ -4454,6 +4458,7 @@ MonoBehaviour:
     [Only
     one crystal upgrade can be choose]'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 1305701437}
@@ -5515,6 +5520,7 @@ MonoBehaviour:
   skillName: Restore with Parry
   skillDescription: You restore a bit of health with succesful parry
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 994076786}
@@ -16134,6 +16140,7 @@ MonoBehaviour:
   skillName: Dodge Mirage
   skillDescription: You can create mirage on dodge
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 1736178194}
@@ -16615,6 +16622,7 @@ MonoBehaviour:
     You cann''t longer teleport
     to your crystal'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 708060179}
@@ -17869,6 +17877,7 @@ MonoBehaviour:
 
     [Only one crystal upgrade can be choose]'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 1305701437}
@@ -18725,6 +18734,7 @@ MonoBehaviour:
   skillName: Parry with a Mirage
   skillDescription: You create a clone with a succesful parry
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 407579308}
@@ -19067,6 +19077,7 @@ MonoBehaviour:
     [Only one sword upgrade
     can be choose]'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 850230330}
@@ -20376,6 +20387,7 @@ MonoBehaviour:
   skillName: Sword Throw
   skillDescription: Throws sword into the enemy
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked: []
   shouldBeLocked: []
@@ -21520,6 +21532,7 @@ MonoBehaviour:
   skillName: Parry
   skillDescription: You can parry attack to avoid damage
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked: []
   shouldBeLocked: []
@@ -21794,6 +21807,7 @@ MonoBehaviour:
   skillName: Dash - "Actually Here I Am"
   skillDescription: You can create mirage at your arrival
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 300
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 2030386224}
@@ -23823,6 +23837,7 @@ MonoBehaviour:
     [Only one sword upgrade
     can be choose]'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 850230330}
@@ -23989,6 +24004,7 @@ MonoBehaviour:
     Your mirage has 30% of your
     damage'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked: []
   shouldBeLocked: []
@@ -24250,6 +24266,7 @@ MonoBehaviour:
     By click
     ability again, you can teleport to your crystal'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked: []
   shouldBeLocked: []
@@ -25222,6 +25239,7 @@ MonoBehaviour:
 
     [Only one mirage upgrade can be choose]'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 36143759}
@@ -27605,6 +27623,7 @@ MonoBehaviour:
   skillName: Multiple Destruction
   skillDescription: You can create multiple crystal at a time
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 675475241}
@@ -27966,6 +27985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 823293583}
+  myAmountSoul: 600
 --- !u!4 &1616658845
 Transform:
   m_ObjectHideFlags: 0
@@ -29017,6 +29037,7 @@ MonoBehaviour:
   skillName: Dodge
   skillDescription: You getting 10% of a evasion
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked: []
   shouldBeLocked: []
@@ -30921,6 +30942,7 @@ MonoBehaviour:
   skillDescription: You trap enemies in a "Blackhole" which allow you to do tons
     of damage
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 1282740139}
@@ -31304,6 +31326,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 2
+  dashUnlocked: 0
+  dashUnlockButton: {fileID: 1989160102}
+  cloneOnDashUnlocked: 0
+  cloneOnDashUnlockButton: {fileID: 2030386224}
+  cloneOnArrivalUnlocked: 0
+  cloneOnArrivalUnlockButton: {fileID: 1005506148}
 --- !u!114 &1964268900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31319,9 +31347,7 @@ MonoBehaviour:
   cooldown: 0
   clonePrefabs: {fileID: 555674500848161787, guid: ca07b6745cd575c4eace12a573d0479d, type: 3}
   cloneDuration: 1
-  canAttack: 1
-  createCloneOnDashStart: 0
-  createCloneOnDashOver: 0
+  canAttack: 0
   createCloneOnCounterAttack: 0
   canDuplicateClone: 0
   chanceToDuplicate: 0
@@ -31393,9 +31419,9 @@ MonoBehaviour:
   cooldown: 0
   crystalDuration: 1.5
   crystalPrefab: {fileID: 3169231342506141261, guid: aa663b825ad35754188336318b5ba26e, type: 3}
-  cloneInsteadOfCrystal: 1
-  canExplode: 1
-  canMoveToEnemy: 1
+  cloneInsteadOfCrystal: 0
+  canExplode: 0
+  canMoveToEnemy: 0
   moveSpeed: 5
   canUseMultiStacks: 0
   amountOfStacks: 3
@@ -31666,6 +31692,7 @@ MonoBehaviour:
     You are invincible in the
     time of dash'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 100
   unlocked: 0
   shouldBeUnlocked: []
   shouldBeLocked: []
@@ -32172,6 +32199,7 @@ MonoBehaviour:
   skillName: Dash - "Here I Am"
   skillDescription: You leave mirage when you dash
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 200
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 1989160102}
@@ -32318,6 +32346,7 @@ MonoBehaviour:
     [Only
     one mirage upgrade can be choose]'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
+  skillPrice: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 36143759}
