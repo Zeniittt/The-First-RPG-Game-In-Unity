@@ -68,7 +68,7 @@ public class UI_Ingame : MonoBehaviour
 
     private void SetCooldownOf(Image _image)
     {
-        if(dashImage.fillAmount <= 0)
+        if(_image.fillAmount <= 0)
             _image.fillAmount = 1;
     }
 

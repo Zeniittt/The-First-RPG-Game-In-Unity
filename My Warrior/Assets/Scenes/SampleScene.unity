@@ -33474,7 +33474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000443dff489a3f43b1773c324b07825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 10
+  cooldown: 3
   crystalDuration: 1.5
   crystalPrefab: {fileID: 3169231342506141261, guid: aa663b825ad35754188336318b5ba26e, type: 3}
   unlockCrystalButton: {fileID: 1305701437}
