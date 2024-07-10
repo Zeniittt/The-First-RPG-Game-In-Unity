@@ -242,7 +242,10 @@ public class Inventory : MonoBehaviour
                 }
                 else
                 {
-                    materialsToRemove.Add(stashValue);
+                    for (int j = 0; j < _requiredMaterials[i].stackSize; j++)
+                    {
+                        materialsToRemove.Add(stashValue);
+                    }
                 }
 
             }
