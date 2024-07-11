@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec38daf3378ee77459e3b20ac7c0ab69, type: 3}
   m_Name: Tornado
   m_EditorClassIdentifier: 
+  effectDescription: Create Tornado knock up enemy on 3rd attack
   tornadoPrefab: {fileID: 4659527309636343510, guid: b4fc21091e5cd1f4195fa91bbee1e31e, type: 3}
   xVelocity: 10

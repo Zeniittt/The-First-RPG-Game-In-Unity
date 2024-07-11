@@ -496,7 +496,7 @@ MonoBehaviour:
 
 '
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 1282740139}
@@ -1900,10 +1900,10 @@ RectTransform:
   m_Father: {fileID: 648331859}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1050, y: -50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &152954519
 MonoBehaviour:
@@ -3070,7 +3070,7 @@ MonoBehaviour:
   skillName: Time Stop
   skillDescription: When enemy hit by sword, his time stops
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 850230330}
@@ -3212,10 +3212,10 @@ RectTransform:
   m_Father: {fileID: 712566494}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 450, y: -50}
-  m_SizeDelta: {x: 300, y: 80}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &231057170
 MonoBehaviour:
@@ -3677,7 +3677,7 @@ MonoBehaviour:
   skillName: Bullet Sword
   skillDescription: "Sword can pierce targets \n[Only one sword upgrade can be choose]"
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 850230330}
@@ -3941,7 +3941,7 @@ MonoBehaviour:
   skillName: Vulnerability
   skillDescription: When enemy hit by sword, take 10% more damage
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 850230330}
@@ -4982,7 +4982,7 @@ MonoBehaviour:
     [Only
     one crystal upgrade can be choose]'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 1305701437}
@@ -5266,6 +5266,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319849188}
   m_CullTransparentMesh: 1
+--- !u!1 &322088929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 322088932}
+  - component: {fileID: 322088931}
+  - component: {fileID: 322088930}
+  m_Layer: 5
+  m_Name: SkillCost
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &322088930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322088929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 23
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 84bdc42b70bb5e54aa18bb33c1fa834e, type: 2}
+  m_sharedMaterial: {fileID: -8065883861848785263, guid: 84bdc42b70bb5e54aa18bb33c1fa834e, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4292725289
+  m_fontColor: {r: 0.15884651, g: 0.7940331, b: 0.8679245, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 28
+  m_fontSizeBase: 28
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 1024
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &322088931
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322088929}
+  m_CullTransparentMesh: 1
+--- !u!224 &322088932
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322088929}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1777660649}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -9.28, y: 25.017982}
+  m_SizeDelta: {x: -18.559, y: 24.125}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &333213395
 GameObject:
   m_ObjectHideFlags: 0
@@ -6251,7 +6386,7 @@ MonoBehaviour:
   skillName: Restore with Parry
   skillDescription: You restore a bit of health with succesful parry
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 994076786}
@@ -15654,7 +15789,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -5.600006, y: -0.4470005}
   m_SizeDelta: {x: 100, y: 59.305}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -17177,7 +17312,7 @@ MonoBehaviour:
   skillName: Dodge Mirage
   skillDescription: You can create mirage on dodge
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 1736178194}
@@ -17796,7 +17931,7 @@ MonoBehaviour:
     You cann''t longer teleport
     to your crystal'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 708060179}
@@ -19156,7 +19291,7 @@ MonoBehaviour:
 
     [Only one crystal upgrade can be choose]'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 1305701437}
@@ -19724,10 +19859,10 @@ RectTransform:
   m_Father: {fileID: 648331859}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 750, y: -50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &746699059
 MonoBehaviour:
@@ -20050,7 +20185,7 @@ MonoBehaviour:
   skillName: Parry with a Mirage
   skillDescription: You create a clone with a succesful parry
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 407579308}
@@ -20393,7 +20528,7 @@ MonoBehaviour:
     [Only one sword upgrade
     can be choose]'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 850230330}
@@ -20796,10 +20931,10 @@ RectTransform:
   m_Father: {fileID: 712566494}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1050, y: -50}
-  m_SizeDelta: {x: 300, y: 80}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &816400769
 MonoBehaviour:
@@ -21821,7 +21956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &843444978
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21932,7 +22067,7 @@ MonoBehaviour:
   skillName: Sword Throw
   skillDescription: Throws sword into the enemy
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 50
   unlocked: 0
   shouldBeUnlocked: []
   shouldBeLocked: []
@@ -22283,7 +22418,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -23455,7 +23590,7 @@ MonoBehaviour:
   skillName: Parry
   skillDescription: You can parry attack to avoid damage
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 75
   unlocked: 0
   shouldBeUnlocked: []
   shouldBeLocked: []
@@ -23576,10 +23711,10 @@ RectTransform:
   m_Father: {fileID: 648331859}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 450, y: -50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1004839184
 MonoBehaviour:
@@ -23730,7 +23865,7 @@ MonoBehaviour:
   skillName: Dash - "Actually Here I Am"
   skillDescription: You can create mirage at your arrival
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 300
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 2030386224}
@@ -25205,10 +25340,10 @@ RectTransform:
   m_Father: {fileID: 648331859}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1350, y: -50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1183468105
 MonoBehaviour:
@@ -25791,7 +25926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1255070587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26026,7 +26161,7 @@ MonoBehaviour:
     [Only one sword upgrade
     can be choose]'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 850230330}
@@ -26193,7 +26328,7 @@ MonoBehaviour:
     Your mirage has 30% of your
     damage'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked: []
   shouldBeLocked: []
@@ -26455,7 +26590,7 @@ MonoBehaviour:
     By click
     ability again, you can teleport to your crystal'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked: []
   shouldBeLocked: []
@@ -27565,7 +27700,7 @@ MonoBehaviour:
 
     [Only one mirage upgrade can be choose]'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 36143759}
@@ -28679,7 +28814,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.4470005}
   m_SizeDelta: {x: 100, y: 59.305}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -30255,7 +30390,7 @@ MonoBehaviour:
   skillName: Multiple Destruction
   skillDescription: You can create multiple crystal at a time
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 675475241}
@@ -32015,7 +32150,7 @@ MonoBehaviour:
   skillName: Dodge
   skillDescription: You getting 10% of a evasion
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked: []
   shouldBeLocked: []
@@ -32292,10 +32427,10 @@ RectTransform:
   m_Father: {fileID: 712566494}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 750, y: -50}
-  m_SizeDelta: {x: 300, y: 80}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1760120884
 MonoBehaviour:
@@ -32637,6 +32772,7 @@ RectTransform:
   m_Children:
   - {fileID: 532762421}
   - {fileID: 2092915948}
+  - {fileID: 322088932}
   m_Father: {fileID: 1255070589}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32697,6 +32833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: {fileID: 532762422}
   skillDescription: {fileID: 2092915949}
+  skillCost: {fileID: 322088930}
 --- !u!1 &1779708680
 GameObject:
   m_ObjectHideFlags: 0
@@ -32834,10 +32971,10 @@ RectTransform:
   m_Father: {fileID: 712566494}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1350, y: -50}
-  m_SizeDelta: {x: 300, y: 80}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1792774519
 MonoBehaviour:
@@ -34313,7 +34450,7 @@ MonoBehaviour:
   skillDescription: You trap enemies in a "Blackhole" which allow you to do tons
     of damage
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 1282740139}
@@ -34959,7 +35096,7 @@ MonoBehaviour:
   startingItems:
   - {fileID: 11400000, guid: 1f02394d5ecb774439139fefd329a6d7, type: 2}
   - {fileID: 11400000, guid: b96a8ca4c9779cd4eaa8663603812e44, type: 2}
-  - {fileID: 11400000, guid: 30cef8a6f83a0cc4d87825c09c3aaa09, type: 2}
+  - {fileID: 11400000, guid: 94062c22a75b5b046be30da5cc843df4, type: 2}
   - {fileID: 11400000, guid: d5e0f56e4fc25c14b9dbf20b2a6e93ba, type: 2}
   - {fileID: 11400000, guid: 0ab27d43261dc9043b70454d02b7dc86, type: 2}
   - {fileID: 11400000, guid: 559a0bd57d088334481bc17e176cfb9f, type: 2}
@@ -35188,7 +35325,7 @@ MonoBehaviour:
     You are invincible in the
     time of dash'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 100
+  skillCost: 50
   unlocked: 0
   shouldBeUnlocked: []
   shouldBeLocked: []
@@ -35830,7 +35967,7 @@ MonoBehaviour:
   skillName: Dash - "Here I Am"
   skillDescription: You leave mirage when you dash
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 200
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 1989160102}
@@ -36055,7 +36192,7 @@ MonoBehaviour:
     [Only
     one mirage upgrade can be choose]'
   lockedSkillColor: {r: 0.49411765, g: 0.4117647, b: 0.4117647, a: 1}
-  skillPrice: 0
+  skillCost: 0
   unlocked: 0
   shouldBeUnlocked:
   - {fileID: 36143759}
@@ -37060,7 +37197,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -37213,8 +37350,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -33.080994}
-  m_SizeDelta: {x: 0, y: -66.162}
+  m_AnchoredPosition: {x: 0, y: -14.541}
+  m_SizeDelta: {x: 0, y: -103.243}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2092915949
 MonoBehaviour:

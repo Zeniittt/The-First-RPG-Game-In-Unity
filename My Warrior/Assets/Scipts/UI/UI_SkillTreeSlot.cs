@@ -13,7 +13,7 @@ public class UI_SkillTreeSlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
     [TextArea]
     [SerializeField] private string skillDescription;
     [SerializeField] private Color lockedSkillColor;
-    [SerializeField] private int skillPrice;
+    [SerializeField] private int skillCost;
 
     public bool unlocked;
 
@@ -40,7 +40,7 @@ public class UI_SkillTreeSlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     public void UnlockSkillSlot()
     {
-        if (PlayerManager.instance.HaveEnoughSoul(skillPrice) == false)
+        if (PlayerManager.instance.HaveEnoughSoul(skillCost) == false)
             return;
 
         for (int i = 0; i < shouldBeUnlocked.Length; i++)
@@ -67,7 +67,7 @@ public class UI_SkillTreeSlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        ui.skillToolTip.ShowToolTip(skillName, skillDescription);
+        ui.skillToolTip.ShowToolTip(skillName, skillDescription, skillCost);
     }
 
     public void OnPointerExit(PointerEventData eventData)

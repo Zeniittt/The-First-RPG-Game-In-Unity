@@ -17,8 +17,7 @@ public class ItemData_Equipment : ItemData
     [Header("Unique Effect")]
     public float itemCooldown;
     public ItemEffect[] itemEffects;
-    [TextArea]
-    public string itemEffectDescription;
+
 
     [Header("Major Stats")]
     public int strength;       // 1 point increase damage by 1 and crit power 1%
@@ -121,11 +120,17 @@ public class ItemData_Equipment : ItemData
         AddItemDescription("Ice DMG", iceDamage);
         AddItemDescription("Lighting DMG", lightingDamage);
 
-        if(itemEffectDescription.Length > 0)
+        if(itemEffects.Length > 0)
         {
             sb.AppendLine();
             sb.AppendLine();
-            sb.Append("Passive: " + itemEffectDescription);
+            for (int i = 0; i < itemEffects.Length; i++)
+            {
+                if (itemEffects[i].effectDescription.Length > 0)
+                {
+                    sb.AppendLine("Passive: " + itemEffects[i].effectDescription);
+                }
+            }
         }
 
         return sb.ToString();
