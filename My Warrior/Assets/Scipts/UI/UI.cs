@@ -1,8 +1,14 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class UI : MonoBehaviour, ISaveManager
 {
+    [Header("End Screen")]
+    [SerializeField] private UI_FadeScreen fadeScreen;
+    [SerializeField] private GameObject endText;
+    [Space]
+
     [SerializeField] private GameObject characterUI;
     [SerializeField] private GameObject skillTreeUI;
     [SerializeField] private GameObject craftUI;
@@ -53,7 +59,9 @@ public class UI : MonoBehaviour, ISaveManager
     {
         for (int i = 0; i < transform.childCount; i++)
         {
-            transform.GetChild(i).gameObject.SetActive(false);
+            bool fadeScreen = transform.GetChild(i).GetComponent<UI_FadeScreen>() != null;  //we need this to keep fade screen gameObejct active
+            if(fadeScreen == false)
+                transform.GetChild(i).gameObject.SetActive(false);
         }
 
         if (_menu != null)
@@ -109,5 +117,18 @@ public class UI : MonoBehaviour, ISaveManager
             }
         }
 
+    }
+
+    public void SwitchOnEndScreen()
+    {
+        fadeScreen.FadeOut();
+        StartCoroutine(EndScreenCoroutine());
+    }
+
+    IEnumerator EndScreenCoroutine()
+    {
+        yield return new WaitForSeconds(1);
+
+        endText.SetActive(true);
     }
 }
