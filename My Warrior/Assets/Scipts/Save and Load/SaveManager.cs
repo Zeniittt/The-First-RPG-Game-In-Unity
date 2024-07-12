@@ -73,4 +73,10 @@ public class SaveManager : MonoBehaviour
 
         return new List<ISaveManager>(saveManagers);
     }
+
+    private void DeleteSavedData()
+    {
+        dataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
+        dataHandler.Delete();
+    }
 }

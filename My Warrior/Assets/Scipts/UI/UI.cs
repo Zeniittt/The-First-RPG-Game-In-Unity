@@ -93,7 +93,6 @@ public class UI : MonoBehaviour, ISaveManager
 
     public void SaveData(ref GameData _data)
     {
-        Debug.Log("Save Skill");
 
         Dictionary<string, bool> newSkillTreeDictionary = SaveSkillManager.instance.skillTree;
 
