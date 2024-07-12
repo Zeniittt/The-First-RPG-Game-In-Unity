@@ -73,6 +73,59 @@ public class Sword_Skill : Skill
         vulnerableUnlockButton.GetComponent<Button>().onClick.AddListener(UnlockVulnerable);
     }
 
+    protected override void CheckUnlock()
+    {
+        UnlockSword();
+        UnlockTimeStop();
+        UnlockVulnerable();
+        UnlockBounceSword();
+        UnlockPierceSword();
+        UnlockSpinSword();
+    }
+
+    #region Unlock
+
+    private void UnlockSword()
+    {
+        if (swordUnlockButton.unlocked)
+        {
+            swordType = SwordType.Regular;
+            swordUnlocked = true;
+        }
+    }
+
+    private void UnlockTimeStop()
+    {
+        if (timeStopUnlockButton.unlocked)
+            timeStopUnlocked = true;
+    }
+
+    private void UnlockVulnerable()
+    {
+        if (vulnerableUnlockButton.unlocked)
+            vulnerableUnlocked = true;
+    }
+
+    private void UnlockBounceSword()
+    {
+        if (bounceUnlockButton.unlocked)
+            swordType = SwordType.Bounce;
+    }
+
+    private void UnlockPierceSword()
+    {
+        if (pierceUnlockButton.unlocked)
+            swordType = SwordType.Pierce;
+    }
+
+    private void UnlockSpinSword()
+    {
+        if (spinUnlockButton.unlocked)
+            swordType = SwordType.Spin;
+    }
+
+    #endregion
+
     protected override void Update()
     {
         if (Input.GetKeyUp(KeyCode.Mouse1))
@@ -154,49 +207,6 @@ public class Sword_Skill : Skill
 
         DotsActive(false);
     }
-
-    #region Unlock
-
-    private void UnlockSword()
-    {
-        if (swordUnlockButton.unlocked)
-        {
-            swordType = SwordType.Regular;
-            swordUnlocked = true;
-        }
-    }
-
-    private void UnlockTimeStop()
-    {
-        if (timeStopUnlockButton.unlocked)
-            timeStopUnlocked = true;
-    }
-
-    private void UnlockVulnerable()
-    {
-        if (vulnerableUnlockButton.unlocked)
-            vulnerableUnlocked = true;
-    }
-
-    private void UnlockBounceSword()
-    {
-        if (bounceUnlockButton.unlocked)
-            swordType = SwordType.Bounce;
-    }
-
-    private void UnlockPierceSword()
-    {
-        if (pierceUnlockButton.unlocked)
-            swordType = SwordType.Pierce;
-    }
-
-    private void UnlockSpinSword()
-    {
-        if (spinUnlockButton.unlocked)
-            swordType = SwordType.Spin;
-    }
-
-    #endregion
 
     public Vector2 AimDirection()
     {

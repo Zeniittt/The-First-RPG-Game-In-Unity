@@ -7,9 +7,9 @@ using UnityEngine.UI;
 public class UI_SkillTreeSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     private UI ui;
-    private Image skillImage;
+    public Image skillImage;
 
-    [SerializeField] private string skillName;
+    [SerializeField] public string skillName;
     [TextArea]
     [SerializeField] private string skillDescription;
     [SerializeField] private Color lockedSkillColor;
@@ -36,6 +36,9 @@ public class UI_SkillTreeSlot : MonoBehaviour, IPointerEnterHandler, IPointerExi
         skillImage = GetComponent<Image>();
 
         skillImage.color = lockedSkillColor;
+
+        if (unlocked)
+            skillImage.color = Color.white;
     }
 
     public void UnlockSkillSlot()

@@ -1,6 +1,7 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public class UI : MonoBehaviour
+public class UI : MonoBehaviour, ISaveManager
 {
     [SerializeField] private GameObject characterUI;
     [SerializeField] private GameObject skillTreeUI;
@@ -13,6 +14,8 @@ public class UI : MonoBehaviour
     public UI_CraftWindow craftWindow;
     public UI_SkillToolTip skillToolTip;
 
+    private Dictionary<string, bool> skillTreeDictionary;
+
     private void Awake()
     {
         SwitchTo(skillTreeUI);
@@ -24,6 +27,8 @@ public class UI : MonoBehaviour
 
         itemToolTip.gameObject.SetActive(false);
         statToolTip.gameObject.SetActive(false);
+
+        skillTreeDictionary = SaveSkillManager.instance.skillTree;
     }
 
     // Update is called once per frame
@@ -40,6 +45,8 @@ public class UI : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.O))
             SwitchWithKeyTo(optionsUI);
+
+        skillTreeDictionary = SaveSkillManager.instance.skillTree;
     }
 
     public void SwitchTo(GameObject _menu)
@@ -69,10 +76,39 @@ public class UI : MonoBehaviour
     {
         for (int i = 0; i < transform.childCount; i++)
         {
-            if(transform.GetChild(i).gameObject.activeSelf)
+            if (transform.GetChild(i).gameObject.activeSelf)
                 return;
         }
 
         SwitchTo(inGameUI);
+    }
+
+    public void LoadData(GameData _data)
+    {
+        foreach (KeyValuePair<string, bool> item in _data.skillTree)
+        {
+            SaveSkillManager.instance.SetSkillFromDataBase(item.Key, item.Value);
+        }
+    }
+
+    public void SaveData(ref GameData _data)
+    {
+        Debug.Log("Save Skill");
+
+        Dictionary<string, bool> newSkillTreeDictionary = SaveSkillManager.instance.skillTree;
+
+        foreach (KeyValuePair<string, bool> skill in skillTreeDictionary)
+        {
+            if (_data.skillTree.TryGetValue(skill.Key, out bool value))
+            {
+                _data.skillTree.Remove(skill.Key);
+                _data.skillTree.Add(skill.Key, skill.Value);
+            }
+            else
+            {
+                _data.skillTree.Add(skill.Key, skill.Value);
+            }
+        }
+
     }
 }

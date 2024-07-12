@@ -29,6 +29,7 @@ public class UI_StatSlot : MonoBehaviour,  IPointerEnterHandler, IPointerExitHan
         UpdateStatValueUI();
 
         ui = GetComponentInParent<UI>();
+
     }
 
     public void UpdateStatValueUI()

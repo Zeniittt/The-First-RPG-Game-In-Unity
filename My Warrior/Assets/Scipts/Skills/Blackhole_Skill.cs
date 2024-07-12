@@ -50,6 +50,11 @@ public class Blackhole_Skill : Skill
         base.Update();
     }
 
+    protected override void CheckUnlock()
+    {
+        UnlockBlackhole();
+    }
+
     public bool SkillCompleted()
     {
         if (!currentBlackhole)

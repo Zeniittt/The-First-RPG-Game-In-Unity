@@ -39,6 +39,15 @@ public class Parry_Skill : Skill
         parryWithMirageUnlockButton.GetComponent<Button>().onClick.AddListener(UnlockParryWithMirage);
     }
 
+    protected override void CheckUnlock()
+    {
+        UnlockParry();
+        UnlockParryRestoreHealth();
+        UnlockParryWithMirage();
+    }
+
+    #region Unlock
+
     private void UnlockParry()
     {
         if (parryUnlockButton.unlocked)
@@ -56,6 +65,8 @@ public class Parry_Skill : Skill
         if (parryWithMirageUnlockButton.unlocked)
             parryWithMirageUnlocked = true;
     }
+
+    #endregion
 
     public void MakeMirageOnParry(Transform _respawnTransform)
     {
