@@ -9,10 +9,14 @@ public class FileDataHandler
     private string dataDirPath = "";
     private string dataFileName = "";
 
-    public FileDataHandler(string _dataDirPath, string _dataFileName)
+    private bool encryptData = false;
+    private string codeWord = "ZeniitDeepTry";
+
+    public FileDataHandler(string _dataDirPath, string _dataFileName, bool _encryptData)
     {
         dataDirPath = _dataDirPath;
         dataFileName = _dataFileName;
+        encryptData = _encryptData;
     }
 
     public void Save(GameData _data)
@@ -23,6 +27,9 @@ public class FileDataHandler
         {
             Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
             string dataToStore = JsonUtility.ToJson(_data, true);
+
+            if(encryptData)
+                dataToStore = EncryptDecrypt(dataToStore);
 
             using(FileStream stream = new FileStream(fullPath, FileMode.Create))
             {
@@ -58,6 +65,9 @@ public class FileDataHandler
                     }
                 }
 
+                if (encryptData)
+                    dataToLoad = EncryptDecrypt(dataToLoad);
+
                 loadData = JsonUtility.FromJson<GameData>(dataToLoad);
 
 
@@ -76,5 +86,17 @@ public class FileDataHandler
         
         if(File.Exists(fullPath))
             File.Delete(fullPath);
+    }
+
+    private string EncryptDecrypt(string _data)
+    {
+        string modifiedData = "";
+
+        for (int i = 0; i < _data.Length; i++)
+        {
+            modifiedData += (char)(_data[i] ^ codeWord[i % codeWord.Length]);
+        }
+
+        return modifiedData;
     }
 }

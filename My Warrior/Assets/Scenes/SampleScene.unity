@@ -24144,6 +24144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: data.mw
+  encryptData: 1
 --- !u!4 &1019327359
 Transform:
   m_ObjectHideFlags: 0
