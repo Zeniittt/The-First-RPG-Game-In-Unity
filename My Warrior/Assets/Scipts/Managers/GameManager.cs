@@ -38,7 +38,6 @@ public class GameManager : MonoBehaviour, ISaveManager
             {
                 if (checkpoint.id == pair.Key && pair.Value == true)
                 {
-                    Debug.Log(checkpoint.id);
                     checkpoint.ActivateCheckpoint();
                 }
             }

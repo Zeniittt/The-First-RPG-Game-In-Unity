@@ -15020,6 +15020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpoints: []
+  closestCheckpointId: 
 --- !u!4 &478483245
 Transform:
   m_ObjectHideFlags: 0
@@ -15851,7 +15852,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.969051, y: 3.295695, z: -10}
+  m_LocalPosition: {x: -22.970436, y: 3.295695, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23470,6 +23471,7 @@ GameObject:
   - component: {fileID: 943463636}
   - component: {fileID: 943463637}
   - component: {fileID: 943463638}
+  - component: {fileID: 943463639}
   m_Layer: 7
   m_Name: Enemy_Skeleton
   m_TagString: Untagged
@@ -23675,6 +23677,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8e6777a5dfc903149b6d8921eaefb18f, type: 2}
   - {fileID: 11400000, guid: 39c47b225aabf2c45b917148e9d8b54d, type: 2}
   dropPrefab: {fileID: 7906463770287357712, guid: ef9926c514a845542973107ce29e500c, type: 3}
+--- !u!114 &943463639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943463630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7cd4de1c5920b4596ee535a9e05673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPrefab: {fileID: 5336406524201233372, guid: 1a740d3ec7ae17242a47352d5be4a0da, type: 3}
+  soulDrop: {fileID: 11400000, guid: 939412cc1f0a0834d921c1da93e0da9c, type: 2}
 --- !u!224 &946217216 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1911502857842437353, guid: 95ea8a0ecc7ce4f418bca71ff4545605, type: 3}
@@ -26066,7 +26082,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183942973}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.969051, y: 3.295695, z: -10}
+  m_LocalPosition: {x: -22.970436, y: 3.295695, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
