@@ -61,6 +61,7 @@ public class UI : MonoBehaviour, ISaveManager
 
     public void SwitchTo(GameObject _menu)
     {
+
         for (int i = 0; i < transform.childCount; i++)
         {
             bool fadeScreen = transform.GetChild(i).GetComponent<UI_FadeScreen>() != null;  //we need this to keep fade screen gameObejct active
@@ -69,7 +70,9 @@ public class UI : MonoBehaviour, ISaveManager
         }
 
         if (_menu != null)
+        {
             _menu.SetActive(true);
+        }
     }
 
     public void SwitchWithKeyTo(GameObject _menu)
@@ -82,6 +85,7 @@ public class UI : MonoBehaviour, ISaveManager
         }
 
         SwitchTo(_menu);
+        SFXWhenSwitchTab();
     }
 
     private void CheckForInGameUI()
@@ -159,4 +163,9 @@ public class UI : MonoBehaviour, ISaveManager
     }
 
     public void RestartGameButton() => GameManager.instance.RestartScene();
+
+    public void SFXWhenSwitchTab()
+    {
+        AudioManager.instance.PlaySFX(7, null);
+    }
 }

@@ -2887,6 +2887,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &152954520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4500,6 +4512,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &231057171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5440,6 +5464,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 843444977}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7121,11 +7157,23 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 602444935}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: SwitchTo
-        m_Mode: 2
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 445505394}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -17714,6 +17762,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &541993173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22403,6 +22463,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &746699060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23472,6 +23544,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 1177247773}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -27282,6 +27366,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1004839185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28361,6 +28457,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1090324659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29028,6 +29136,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1171044691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29238,6 +29358,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 843444977}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -33438,6 +33570,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1488319952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34566,6 +34710,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 1177247773}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -36458,6 +36614,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1661838601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38087,6 +38255,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1760120885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38626,6 +38806,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 843444977}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 602444935}
+        m_TargetAssemblyTypeName: UI, Assembly-CSharp
+        m_MethodName: SFXWhenSwitchTab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
