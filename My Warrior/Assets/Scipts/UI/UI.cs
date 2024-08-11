@@ -23,6 +23,8 @@ public class UI : MonoBehaviour, ISaveManager
 
     private Dictionary<string, bool> skillTreeDictionary;
 
+    [SerializeField] private UI_VolumeSlider[] volumeSettings;
+
     private void Awake()
     {
         SwitchTo(skillTreeUI);
@@ -99,6 +101,18 @@ public class UI : MonoBehaviour, ISaveManager
         {
             SaveSkillManager.instance.SetSkillFromDataBase(item.Key, item.Value);
         }
+
+        //Volume Part
+
+        foreach (KeyValuePair<string, float> pair in _data.volumeSettings)
+        {
+            foreach (UI_VolumeSlider item in volumeSettings)
+            {
+                if (item.parameter == pair.Key)
+                    item.LoadSlider(pair.Value);
+            }
+        }
+
     }
 
     public void SaveData(ref GameData _data)
@@ -117,6 +131,14 @@ public class UI : MonoBehaviour, ISaveManager
             {
                 _data.skillTree.Add(skill.Key, skill.Value);
             }
+        }
+
+        // Volume Part
+        _data.volumeSettings.Clear();
+
+        foreach (UI_VolumeSlider item in volumeSettings)
+        {
+            _data.volumeSettings.Add(item.parameter, item.slider.value);
         }
 
     }
