@@ -158,4 +158,9 @@ public class Player : Entity
         stateMachine.ChangeState(dead);
     }
 
+    protected override void SetupZeroKnockbackPower()
+    {
+        knockbackPower = new Vector2(0, 0);
+    }
+
 }

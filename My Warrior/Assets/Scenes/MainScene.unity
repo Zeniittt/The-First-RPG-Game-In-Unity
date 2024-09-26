@@ -23894,7 +23894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackPower: {x: 0, y: 0}
-  knockbackDuration: 0
+  knockbackDuration: 0.3
   attackCheck: {fileID: 178684499}
   attackCheckRadius: 0.8
   groundCheck: {fileID: 802438929}
@@ -24007,7 +24007,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   maxHealth:
-    baseValue: 1000
+    baseValue: 100
     modifiers: 
   armor:
     baseValue: 0
@@ -26536,7 +26536,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   damage:
-    baseValue: 80
+    baseValue: 50
     modifiers: 
   critChance:
     baseValue: 0
