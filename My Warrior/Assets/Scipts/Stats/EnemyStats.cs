@@ -68,5 +68,7 @@ public class EnemyStats : CharacterStats
 
         myDropSystem.GenerateDrop();
         soulDrop.GenerateDrop();
+
+        Destroy(gameObject, 3f);
     }
 }
