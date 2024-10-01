@@ -28859,9 +28859,11 @@ MonoBehaviour:
   shockColor:
   - {r: 1, g: 0.8901961, b: 0.38431373, a: 1}
   - {r: 0.94509804, g: 0.8745098, b: 0.54901963, a: 1}
-  igniteFx: {fileID: 0}
-  chillFx: {fileID: 0}
-  shockFx: {fileID: 0}
+  igniteFx: {fileID: 1173719980}
+  chillFx: {fileID: 553440604}
+  shockFx: {fileID: 1126431313}
+  hitFx: {fileID: 3517027415922906186, guid: 2fcd7a4260ba68f409ca9c312293467b, type: 3}
+  criticalHitFx: {fileID: 3732125778072768157, guid: 5ca75504ac5f56f47a791d0f24d73168, type: 3}
 --- !u!114 &823293587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28890,7 +28892,7 @@ MonoBehaviour:
     baseValue: 0
     modifiers: 
   critChance:
-    baseValue: 0
+    baseValue: 100
     modifiers: 
   critPower:
     baseValue: 0
@@ -36125,7 +36127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2cd1c62da9eb2f40ad7b36f824f69c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockbackPower: {x: 7, y: 12}
+  knockbackPower: {x: 7, y: 5}
   knockbackDuration: 0.05
   attackCheck: {fileID: 272176239}
   attackCheckRadius: 1.5
@@ -36220,6 +36222,8 @@ MonoBehaviour:
   igniteFx: {fileID: 869462666}
   chillFx: {fileID: 1543272345}
   shockFx: {fileID: 1064629256}
+  hitFx: {fileID: 3517027415922906186, guid: 2fcd7a4260ba68f409ca9c312293467b, type: 3}
+  criticalHitFx: {fileID: 3732125778072768157, guid: 5ca75504ac5f56f47a791d0f24d73168, type: 3}
 --- !u!114 &943463636
 MonoBehaviour:
   m_ObjectHideFlags: 0
