@@ -28850,6 +28850,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7e690e0a6ae1b94c80fcdfc3374663d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  afterImagePrefab: {fileID: 6802522374100170843, guid: 7f1d7a0e722899149ae3b33a2eb74a63, type: 3}
+  colorLooseRate: 1
+  afterImageCooldown: 0.05
   hitMat: {fileID: 2100000, guid: ccba11078a492324aa12d643fc48a623, type: 2}
   igniteColor:
   - {r: 0.99215686, g: 0.3882353, b: 0.3882353, a: 1}
@@ -36211,6 +36214,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7e690e0a6ae1b94c80fcdfc3374663d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  afterImagePrefab: {fileID: 0}
+  colorLooseRate: 0
+  afterImageCooldown: 0
   hitMat: {fileID: 2100000, guid: ccba11078a492324aa12d643fc48a623, type: 2}
   igniteColor:
   - {r: 0.99215686, g: 0.3882353, b: 0.3882353, a: 1}
