@@ -25,6 +25,7 @@ public class Player : Entity
 
     public SkillManager skill { get; private set; }
     public GameObject sword { get; private set; }
+    public PlayerFx fx { get; private set; }
 
 
     #region States
@@ -72,6 +73,7 @@ public class Player : Entity
         base.Start();
 
         skill = SkillManager.instance;
+        fx = GetComponent<PlayerFx>();
 
         stateMachine.Initialize(idleState);
 
