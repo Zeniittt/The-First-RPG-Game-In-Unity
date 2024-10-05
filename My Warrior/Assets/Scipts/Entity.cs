@@ -119,7 +119,7 @@ public class Entity : MonoBehaviour
     protected virtual void OnDrawGizmos()
     {
         Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
-        Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y));
+        Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance * facingDirection, wallCheck.position.y));
         Gizmos.DrawWireSphere(attackCheck.position, attackCheckRadius);
     }
 
@@ -142,6 +142,14 @@ public class Entity : MonoBehaviour
         if (_x > 0 && !facingRight) Flip();
         else
             if (_x < 0 && facingRight) Flip();
+    }
+
+    public virtual void SetupDefaultFacingDirection(int _direction)
+    {
+        facingDirection = _direction;
+
+        if(facingDirection == -1)
+            facingRight = false;
     }
 
     #endregion
