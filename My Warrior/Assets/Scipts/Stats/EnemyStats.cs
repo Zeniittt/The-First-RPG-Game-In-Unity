@@ -67,7 +67,9 @@ public class EnemyStats : CharacterStats
         enemy.Die();
 
         myDropSystem.GenerateDrop();
-        soulDrop.GenerateDrop();
+
+        if(soulDrop != null)
+            soulDrop.GenerateDrop();
 
         Destroy(gameObject, 3f);
     }
