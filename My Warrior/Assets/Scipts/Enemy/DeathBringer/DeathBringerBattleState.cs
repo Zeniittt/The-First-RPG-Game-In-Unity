@@ -1,16 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class SlimeBattleState : EnemyState
+public class DeathBringerBattleState : EnemyState
 {
-    private Enemy_Slime enemy;
     private Transform player;
+    private Enemy_DeathBringer enemy;
     private int moveDirection;
 
-
-    public SlimeBattleState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Enemy_Slime _enemy) : base(_enemyBase, _stateMachine, _animBoolName)
+    public DeathBringerBattleState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Enemy_DeathBringer _enemy) : base(_enemyBase, _stateMachine, _animBoolName)
     {
         this.enemy = _enemy;
     }
@@ -20,9 +18,9 @@ public class SlimeBattleState : EnemyState
         base.Enter();
 
         player = PlayerManager.instance.player.transform;
-
+/*
         if (player.GetComponent<PlayerStats>().isDead)
-            stateMachine.ChangeState(enemy.moveState);
+            stateMachine.ChangeState(enemy.moveState);*/
     }
 
     public override void Update()
@@ -36,12 +34,9 @@ public class SlimeBattleState : EnemyState
             {
                 if (CanAttack())
                     stateMachine.ChangeState(enemy.attackState);
+                else
+                    stateMachine.ChangeState(enemy.idleState);
             }
-        }
-        else
-        {
-            if (stateTimer < 0 || Vector2.Distance(player.transform.position, enemy.transform.position) > 7)
-                stateMachine.ChangeState(enemy.idleState);
         }
 
         if (player.position.x > enemy.transform.position.x)
@@ -71,6 +66,4 @@ public class SlimeBattleState : EnemyState
         }
         return false;
     }
-
-
 }
